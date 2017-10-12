@@ -1429,7 +1429,7 @@ legend {
   color: inherit;
 }
 mark {
-  background-color: #fffbe6;
+  background-color: #feffe6;
 }
 ::selection {
   background: #1890ff;
@@ -1454,8 +1454,8 @@ mark {
   color: #1890ff;
 }
 .ant-alert-warning {
-  border: 1px solid #ffe58f;
-  background-color: #fffbe6;
+  border: 1px solid #fffb8f;
+  background-color: #feffe6;
 }
 .ant-alert-warning .ant-alert-icon {
   color: #faad14;
@@ -1494,7 +1494,7 @@ mark {
   background-color: #e8e8e8;
 }
 .ant-anchor-ink-ball {
-  border-radius: 9px;
+  border-radius: 10px;
   border: 3px solid #1890ff;
   background-color: #fff;
 }
@@ -1590,9 +1590,10 @@ mark {
 }
 .ant-breadcrumb {
   color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.45);
 }
 .ant-breadcrumb a {
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.45);
 }
 .ant-breadcrumb a:hover {
   color: #40a9ff;
@@ -1625,9 +1626,9 @@ mark {
 }
 .ant-btn:hover,
 .ant-btn:focus {
-  color: #1890ff;
+  color: #40a9ff;
   background-color: #fff;
-  border-color: #1890ff;
+  border-color: #40a9ff;
 }
 .ant-btn:hover > a:only-child,
 .ant-btn:focus > a:only-child {
@@ -1773,21 +1774,21 @@ mark {
   background: transparent;
 }
 .ant-btn-group .ant-btn-primary:not(:first-child):not(:last-child) {
-  border-right-color: #096dd9;
-  border-left-color: #096dd9;
+  border-right-color: #40a9ff;
+  border-left-color: #40a9ff;
 }
 .ant-btn-group .ant-btn-primary:not(:first-child):not(:last-child):disabled {
   border-color: #d9d9d9;
 }
 .ant-btn-group .ant-btn-primary:first-child:not(:last-child) {
-  border-right-color: #096dd9;
+  border-right-color: #40a9ff;
 }
 .ant-btn-group .ant-btn-primary:first-child:not(:last-child)[disabled] {
   border-right-color: #d9d9d9;
 }
 .ant-btn-group .ant-btn-primary:last-child:not(:first-child),
 .ant-btn-group .ant-btn-primary + .ant-btn-primary {
-  border-left-color: #096dd9;
+  border-left-color: #40a9ff;
 }
 .ant-btn-group .ant-btn-primary:last-child:not(:first-child)[disabled],
 .ant-btn-group .ant-btn-primary + .ant-btn-primary[disabled] {
@@ -1806,9 +1807,9 @@ mark {
 }
 .ant-btn-ghost:hover,
 .ant-btn-ghost:focus {
-  color: #1890ff;
+  color: #40a9ff;
   background-color: transparent;
-  border-color: #1890ff;
+  border-color: #40a9ff;
 }
 .ant-btn-ghost:hover > a:only-child,
 .ant-btn-ghost:focus > a:only-child {
@@ -1884,9 +1885,9 @@ mark {
 }
 .ant-btn-dashed:hover,
 .ant-btn-dashed:focus {
-  color: #1890ff;
+  color: #40a9ff;
   background-color: #fff;
-  border-color: #1890ff;
+  border-color: #40a9ff;
 }
 .ant-btn-dashed:hover > a:only-child,
 .ant-btn-dashed:focus > a:only-child {
@@ -1962,8 +1963,8 @@ mark {
 .ant-btn-danger:hover,
 .ant-btn-danger:focus {
   color: #fff;
-  background-color: #f5222d;
-  border-color: #f5222d;
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
 }
 .ant-btn-danger:hover > a:only-child,
 .ant-btn-danger:focus > a:only-child {
@@ -4447,6 +4448,9 @@ form .ant-upload {
   border-radius: 100px;
   background-color: #1890ff;
 }
+.ant-progress-text {
+  color: rgba(0, 0, 0, 0.45);
+}
 .ant-progress-status-active .ant-progress-bg:before {
   background: #fff;
   border-radius: 10px;
@@ -4465,6 +4469,9 @@ form .ant-upload {
 }
 .ant-progress-circle .ant-progress-inner {
   background-color: transparent;
+}
+.ant-progress-circle .ant-progress-text {
+  color: rgba(0, 0, 0, 0.65);
 }
 .ant-progress-circle .ant-progress-status-exception .ant-progress-text {
   color: #f5222d;
@@ -5367,6 +5374,16 @@ tr.ant-table-expanded-row:hover {
   border-color: #eb2f96;
   color: #fff;
 }
+.ant-tag-magenta {
+  color: #eb2f96;
+  background: #fff0f6;
+  border-color: #ffd6e7;
+}
+.ant-tag-magenta-inverse {
+  background: #eb2f96;
+  border-color: #eb2f96;
+  color: #fff;
+}
 .ant-tag-red {
   color: #f5222d;
   background: #fff1f0;
@@ -5388,13 +5405,13 @@ tr.ant-table-expanded-row:hover {
   color: #fff;
 }
 .ant-tag-yellow {
-  color: #faad14;
-  background: #fffbe6;
-  border-color: #fff1b8;
+  color: #fadb14;
+  background: #feffe6;
+  border-color: #ffffb8;
 }
 .ant-tag-yellow-inverse {
-  background: #faad14;
-  border-color: #faad14;
+  background: #fadb14;
+  border-color: #fadb14;
   color: #fff;
 }
 .ant-tag-cyan {
@@ -6620,34 +6637,34 @@ pre[class*="language-"] {
 .main-color .palatte-green-10 {
   background: #092b00;
 }
-.main-color .palatte-pink-1 {
+.main-color .palatte-magenta-1 {
   background: #fff0f6;
 }
-.main-color .palatte-pink-2 {
+.main-color .palatte-magenta-2 {
   background: #ffd6e7;
 }
-.main-color .palatte-pink-3 {
+.main-color .palatte-magenta-3 {
   background: #ffadd2;
 }
-.main-color .palatte-pink-4 {
+.main-color .palatte-magenta-4 {
   background: #ff85c0;
 }
-.main-color .palatte-pink-5 {
+.main-color .palatte-magenta-5 {
   background: #f759ab;
 }
-.main-color .palatte-pink-6 {
+.main-color .palatte-magenta-6 {
   background: #eb2f96;
 }
-.main-color .palatte-pink-7 {
+.main-color .palatte-magenta-7 {
   background: #c41d7f;
 }
-.main-color .palatte-pink-8 {
+.main-color .palatte-magenta-8 {
   background: #9e1068;
 }
-.main-color .palatte-pink-9 {
+.main-color .palatte-magenta-9 {
   background: #780650;
 }
-.main-color .palatte-pink-10 {
+.main-color .palatte-magenta-10 {
   background: #520339;
 }
 .main-color .palatte-red-1 {
@@ -6680,6 +6697,36 @@ pre[class*="language-"] {
 .main-color .palatte-red-10 {
   background: #5c0011;
 }
+.main-color .palatte-volcano-1 {
+  background: #fff2e8;
+}
+.main-color .palatte-volcano-2 {
+  background: #ffd8bf;
+}
+.main-color .palatte-volcano-3 {
+  background: #ffbb96;
+}
+.main-color .palatte-volcano-4 {
+  background: #ff9c6e;
+}
+.main-color .palatte-volcano-5 {
+  background: #ff7a45;
+}
+.main-color .palatte-volcano-6 {
+  background: #fa541c;
+}
+.main-color .palatte-volcano-7 {
+  background: #d4380d;
+}
+.main-color .palatte-volcano-8 {
+  background: #ad2102;
+}
+.main-color .palatte-volcano-9 {
+  background: #871400;
+}
+.main-color .palatte-volcano-10 {
+  background: #610b00;
+}
 .main-color .palatte-orange-1 {
   background: #fff7e6;
 }
@@ -6710,65 +6757,125 @@ pre[class*="language-"] {
 .main-color .palatte-orange-10 {
   background: #612500;
 }
-.main-color .palatte-lemon-1 {
-  background: #feffe6;
-}
-.main-color .palatte-lemon-2 {
-  background: #ffffb8;
-}
-.main-color .palatte-lemon-3 {
-  background: #fffb8f;
-}
-.main-color .palatte-lemon-4 {
-  background: #fff566;
-}
-.main-color .palatte-lemon-5 {
-  background: #ffec3d;
-}
-.main-color .palatte-lemon-6 {
-  background: #fadb14;
-}
-.main-color .palatte-lemon-7 {
-  background: #d4b106;
-}
-.main-color .palatte-lemon-8 {
-  background: #ad8b00;
-}
-.main-color .palatte-lemon-9 {
-  background: #876800;
-}
-.main-color .palatte-lemon-10 {
-  background: #614700;
-}
-.main-color .palatte-yellow-1 {
+.main-color .palatte-gold-1 {
   background: #fffbe6;
 }
-.main-color .palatte-yellow-2 {
+.main-color .palatte-gold-2 {
   background: #fff1b8;
 }
-.main-color .palatte-yellow-3 {
+.main-color .palatte-gold-3 {
   background: #ffe58f;
 }
-.main-color .palatte-yellow-4 {
+.main-color .palatte-gold-4 {
   background: #ffd666;
 }
-.main-color .palatte-yellow-5 {
+.main-color .palatte-gold-5 {
   background: #ffc53d;
 }
-.main-color .palatte-yellow-6 {
+.main-color .palatte-gold-6 {
   background: #faad14;
 }
-.main-color .palatte-yellow-7 {
+.main-color .palatte-gold-7 {
   background: #d48806;
 }
-.main-color .palatte-yellow-8 {
+.main-color .palatte-gold-8 {
   background: #ad6800;
 }
-.main-color .palatte-yellow-9 {
+.main-color .palatte-gold-9 {
   background: #874d00;
 }
-.main-color .palatte-yellow-10 {
+.main-color .palatte-gold-10 {
   background: #613400;
+}
+.main-color .palatte-yellow-1 {
+  background: #feffe6;
+}
+.main-color .palatte-yellow-2 {
+  background: #ffffb8;
+}
+.main-color .palatte-yellow-3 {
+  background: #fffb8f;
+}
+.main-color .palatte-yellow-4 {
+  background: #fff566;
+}
+.main-color .palatte-yellow-5 {
+  background: #ffec3d;
+}
+.main-color .palatte-yellow-6 {
+  background: #fadb14;
+}
+.main-color .palatte-yellow-7 {
+  background: #d4b106;
+}
+.main-color .palatte-yellow-8 {
+  background: #ad8b00;
+}
+.main-color .palatte-yellow-9 {
+  background: #876800;
+}
+.main-color .palatte-yellow-10 {
+  background: #614700;
+}
+.main-color .palatte-lime-1 {
+  background: #fcffe6;
+}
+.main-color .palatte-lime-2 {
+  background: #f4ffb8;
+}
+.main-color .palatte-lime-3 {
+  background: #eaff8f;
+}
+.main-color .palatte-lime-4 {
+  background: #d3f261;
+}
+.main-color .palatte-lime-5 {
+  background: #bae637;
+}
+.main-color .palatte-lime-6 {
+  background: #a0d911;
+}
+.main-color .palatte-lime-7 {
+  background: #7cb305;
+}
+.main-color .palatte-lime-8 {
+  background: #5b8c00;
+}
+.main-color .palatte-lime-9 {
+  background: #3f6600;
+}
+.main-color .palatte-lime-10 {
+  background: #254000;
+}
+.main-color .palatte-geekblue-1 {
+  background: #f0f5ff;
+}
+.main-color .palatte-geekblue-2 {
+  background: #d6e4ff;
+}
+.main-color .palatte-geekblue-3 {
+  background: #adc6ff;
+}
+.main-color .palatte-geekblue-4 {
+  background: #85a5ff;
+}
+.main-color .palatte-geekblue-5 {
+  background: #597ef7;
+}
+.main-color .palatte-geekblue-6 {
+  background: #2f54eb;
+}
+.main-color .palatte-geekblue-7 {
+  background: #1d39c4;
+}
+.main-color .palatte-geekblue-8 {
+  background: #10239e;
+}
+.main-color .palatte-geekblue-9 {
+  background: #061178;
+}
+.main-color .palatte-geekblue-10 {
+  background: #030852;
 }
 .main-color .palatte-grey-1 {
   background: #fbfbfb;
