@@ -169,6 +169,10 @@ address {
   font-style: normal;
   line-height: inherit;
 }
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+}
 ol,
 ul,
 dl {
@@ -302,6 +306,10 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+}
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
 }
 button,
 input {
@@ -3201,6 +3209,7 @@ mark {
   padding: 0;
   list-style: none;
   position: relative;
+  padding-left: 2px;
 }
 .ant-anchor-wrapper {
   background-color: #fff;
@@ -3242,7 +3251,7 @@ mark {
   display: none;
 }
 .ant-anchor-link {
-  padding: 8px 0 8px 18px;
+  padding: 8px 0 8px 16px;
   line-height: 1;
 }
 .ant-anchor-link-title {
@@ -3460,7 +3469,7 @@ mark {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
-  padding-right: 14px;
+  padding-right: 20px;
 }
 .ant-select-disabled {
   color: rgba(0, 0, 0, 0.25);
@@ -3704,7 +3713,7 @@ mark {
   font-family: "anticon" !important;
 }
 :root .ant-select-selection--multiple .ant-select-selection__choice__remove {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-select-selection--multiple .ant-select-selection__choice__remove:hover {
   color: #404040;
@@ -3812,12 +3821,14 @@ mark {
   padding: 0;
 }
 .ant-select-dropdown-menu-item-group-list > .ant-select-dropdown-menu-item {
-  padding-left: 16px;
+  padding-left: 20px;
 }
 .ant-select-dropdown-menu-item-group-title {
   color: rgba(0, 0, 0, 0.45);
-  line-height: 1.5;
-  padding: 12px;
+  padding: 0 12px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
 }
 .ant-select-dropdown-menu-item {
   position: relative;
@@ -3886,7 +3897,7 @@ mark {
   text-shadow: 0 0.1px 0, 0.1px 0 0, 0 -0.1px 0, -0.1px 0;
 }
 :root .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:after {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:hover:after {
   color: #ddd;
@@ -3962,6 +3973,7 @@ textarea.ant-input {
   vertical-align: bottom;
   -webkit-transition: all .3s, height 0s;
   transition: all .3s, height 0s;
+  min-height: 32px;
 }
 .ant-input-lg {
   padding: 6px 11px;
@@ -4215,10 +4227,10 @@ textarea.ant-input {
   right: 12px;
 }
 .ant-input-affix-wrapper .ant-input:not(:first-child) {
-  padding-left: 28px;
+  padding-left: 30px;
 }
 .ant-input-affix-wrapper .ant-input:not(:last-child) {
-  padding-right: 28px;
+  padding-right: 30px;
 }
 .ant-input-affix-wrapper .ant-input {
   min-height: 100%;
@@ -4233,6 +4245,9 @@ textarea.ant-input {
 .ant-input-search > .ant-input-suffix > .ant-input-search-button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.ant-input-search > .ant-input-suffix > .ant-input-search-button > .anticon-search {
+  font-size: 16px;
 }
 .ant-input-search.ant-input-search-enter-button > .ant-input {
   padding-right: 46px;
@@ -5332,8 +5347,8 @@ textarea.ant-input {
   padding-left: 8px;
 }
 .ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .ant-btn:focus > span,
 .ant-btn:active > span {
@@ -6254,7 +6269,6 @@ span.ant-radio + * {
 .ant-card-actions > li {
   float: left;
   text-align: center;
-  height: 16px;
   margin: 12px 0;
   color: rgba(0, 0, 0, 0.45);
 }
@@ -6262,11 +6276,9 @@ span.ant-radio + * {
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
-  height: 32px;
-  line-height: 32px;
+  line-height: 22px;
   min-width: 32px;
   position: relative;
-  top: -8px;
 }
 .ant-card-actions > li > span:hover {
   color: #1890ff;
@@ -6314,6 +6326,9 @@ span.ant-radio + * {
 .ant-card-type-inner .ant-card-extra {
   padding: 13.5px 0;
 }
+.ant-card-meta {
+  margin: -4px 0;
+}
 .ant-card-meta-content {
   display: table-row;
 }
@@ -6338,7 +6353,7 @@ span.ant-radio + * {
   color: rgba(0, 0, 0, 0.85);
   font-weight: 500;
 }
-.ant-card-meta-desscription {
+.ant-card-meta-description {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-card-loading .ant-card-body {
@@ -6642,7 +6657,7 @@ span.ant-radio + * {
 }
 :root .ant-tabs-tab-prev-icon:before,
 :root .ant-tabs-tab-next-icon:before {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-tabs-tab-btn-disabled {
   cursor: not-allowed;
@@ -7228,22 +7243,13 @@ span.ant-radio + * {
   height: 12px;
   margin-top: -6px;
   line-height: 12px;
-  color: rgba(0, 0, 0, 0.45);
-  display: inline-block;
-  font-size: 12px;
-  font-size: 9px \9;
-  -webkit-transform: scale(0.75) rotate(0deg);
-      -ms-transform: scale(0.75) rotate(0deg);
-          transform: scale(0.75) rotate(0deg);
-}
-:root .ant-cascader-picker-arrow {
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.25);
 }
 .ant-cascader-picker-arrow:before {
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 .ant-cascader-picker-arrow.ant-cascader-picker-arrow-expand:before {
   -webkit-transform: rotate(180deg);
@@ -7358,7 +7364,7 @@ span.ant-radio + * {
   right: 12px;
 }
 :root .ant-cascader-menu-item-expand:after {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-cascader-menu-item-loading:after {
   font-family: 'anticon';
@@ -12300,6 +12306,7 @@ textarea.ant-calendar-range .ant-calendar-time-picker-input {
   vertical-align: bottom;
   -webkit-transition: all .3s, height 0s;
   transition: all .3s, height 0s;
+  min-height: 32px;
 }
 .ant-calendar-range .ant-calendar-input-lg,
 .ant-calendar-range .ant-calendar-time-picker-input-lg {
@@ -13262,6 +13269,7 @@ textarea.ant-time-picker-input {
   vertical-align: bottom;
   -webkit-transition: all .3s, height 0s;
   transition: all .3s, height 0s;
+  min-height: 32px;
 }
 .ant-time-picker-input-lg {
   padding: 6px 11px;
@@ -13374,6 +13382,17 @@ textarea.ant-time-picker-input {
   display: inline-block;
   padding: 0 24px;
 }
+.ant-divider-dashed {
+  background: none;
+  border-top: 1px dashed #e8e8e8;
+}
+.ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed {
+  border-top: 0;
+}
+.ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed:before,
+.ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed:after {
+  border-style: dashed none none;
+}
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable declaration-bang-space-before */
 /* stylelint-disable declaration-bang-space-before */
@@ -13405,7 +13424,7 @@ textarea.ant-time-picker-input {
           transform: scale(0.83333333) rotate(0deg);
 }
 :root .ant-dropdown-wrap .ant-btn > .anticon-down {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-dropdown-wrap .anticon-down:before {
   -webkit-transition: -webkit-transform .2s;
@@ -13535,7 +13554,7 @@ textarea.ant-time-picker-input {
 }
 :root .ant-dropdown-menu-item .ant-dropdown-menu-submenu-arrow:after,
 :root .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-arrow:after {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-dropdown-menu-submenu-title {
   padding-right: 26px;
@@ -13608,7 +13627,7 @@ textarea.ant-time-picker-input {
 }
 :root .ant-dropdown-trigger .anticon-down,
 :root .ant-dropdown-link .anticon-down {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-dropdown-button {
   white-space: nowrap;
@@ -13626,7 +13645,7 @@ textarea.ant-time-picker-input {
           transform: scale(0.83333333) rotate(0deg);
 }
 :root .ant-dropdown-button .anticon-down {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-dropdown-menu-dark,
 .ant-dropdown-menu-dark .ant-dropdown-menu {
@@ -14265,12 +14284,7 @@ form .ant-input-group-addon .ant-cascader-picker:only-child {
   color: #1890ff;
 }
 .ant-advanced-search-form .ant-form-item {
-  margin-bottom: 16px;
-}
-.ant-advanced-search-form .ant-input,
-.ant-advanced-search-form .ant-input-group .ant-input,
-.ant-advanced-search-form .ant-input-group .ant-input-group-addon {
-  height: 32px;
+  margin-bottom: 24px;
 }
 .show-help-enter,
 .show-help-appear {
@@ -14471,6 +14485,7 @@ textarea.ant-input-number {
   vertical-align: bottom;
   -webkit-transition: all .3s, height 0s;
   transition: all .3s, height 0s;
+  min-height: 32px;
 }
 .ant-input-number-lg {
   padding: 6px 11px;
@@ -14536,7 +14551,7 @@ textarea.ant-input-number {
 }
 :root .ant-input-number-handler-up-inner,
 :root .ant-input-number-handler-down-inner {
-  font-size: 14px;
+  font-size: 12px;
 }
 .ant-input-number:hover {
   border-color: #40a9ff;
@@ -14595,34 +14610,4 @@ textarea.ant-input-number {
 }
 .ant-input-number-lg input {
   height: 38px;
-}
-.ant-input-number-sm {
-  padding: 0;
-}
-.ant-input-number-sm input {
-  height: 22px;
-  padding: 0 7px;
-}
-.ant-input-number-handler-wrap {
-  border-left: 1px solid #d9d9d9;
-  width: 22px;
-  height: 100%;
-  background: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  border-radius: 0 4px 4px 0;
-  -webkit-transition: opacity 0.24s linear 0.1s;
-  transition: opacity 0.24s linear 0.1s;
-  z-index: 2;
-}
-.ant-input-number-handler-wrap:hover .ant-input-number-handler {
-  height: 40%;
-}
-.ant-input-number:hover .ant-input-number-handler-wrap {
-  opacity: 1;
-}
-.ant-input-number-handler-up {
-  cursor: pointer;
 }
