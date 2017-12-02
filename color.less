@@ -4437,22 +4437,22 @@ form .ant-upload {
 .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow {
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-popover-placement-right > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-rightTop > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-rightBottom > .ant-popover-content > .ant-popover-arrow {
-  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-popover-placement-bottom > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-bottomLeft > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-bottomRight > .ant-popover-content > .ant-popover-arrow {
-  box-shadow: -3px -3px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.06);
 }
 .ant-popover-placement-left > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-leftTop > .ant-popover-content > .ant-popover-arrow,
 .ant-popover-placement-leftBottom > .ant-popover-content > .ant-popover-arrow {
-  box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 3px -3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-progress {
   color: rgba(0, 0, 0, 0.65);
@@ -4763,6 +4763,10 @@ form .ant-upload {
   border: solid 2px #91d5ff;
   background-color: #fff;
 }
+.ant-slider-handle:focus {
+  border-color: #46a6ff;
+  box-shadow: 0 0 0 5px #8cc8ff;
+}
 .ant-slider-handle.ant-tooltip-open {
   border-color: #1890ff;
 }
@@ -4972,9 +4976,19 @@ form .ant-upload {
 .ant-switch-inner {
   color: #fff;
 }
+.ant-switch:before,
 .ant-switch:after {
   border-radius: 18px;
   background-color: #fff;
+}
+.ant-switch:before {
+  background: transprent;
+}
+.ant-switch-loading:before {
+  color: rgba(0, 0, 0, 0.65);
+}
+.ant-switch-checked.ant-switch-loading:before {
+  color: #1890ff;
 }
 .ant-switch:focus {
   box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
@@ -6099,6 +6113,10 @@ body {
 #search-box .ant-input {
   border: 0;
   box-shadow: none;
+}
+.header-lang-button {
+  color: rgba(0, 0, 0, 0.65);
+  border-color: #d9d9d9;
 }
 #nav {
   border: 0;
