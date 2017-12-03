@@ -7765,6 +7765,8 @@ ul.toc > li:not(:last-child) {
   text-overflow: ellipsis;
   color: #314659;
   width: 110px;
+  border-left: 1px solid transparent;
+  margin-left: -1px;
 }
 .toc a:hover {
   color: #1890ff;
