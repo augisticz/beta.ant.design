@@ -1,0 +1,1 @@
+webpackJsonp([52],{1777:function(t,e){t.exports={content:["article"],meta:{order:4,title:{"zh-CN":"\u53ef\u89c6\u5316\u8bed\u8a00","en-US":"Visualization"},link:"https://antv.alipay.com",filename:"docs/spec/visual.md"},toc:["ul"]}}});
