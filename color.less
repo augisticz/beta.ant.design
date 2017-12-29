@@ -6081,7 +6081,10 @@ body {
 }
 .main-container {
   background: #fff;
-  border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #ebedf0;
+}
+.aside-container {
+  border: none;
 }
 .aside-container a[disabled] {
   color: #ccc;
@@ -6120,18 +6123,18 @@ body {
   color: @primary-color;
 }
 #search-box {
-  border-left: 1px solid #ebedee;
+  border-left: 1px solid #ebedf0;
 }
 #search-box .anticon {
   color: #ced4d9;
 }
-#search-box .ant-select-selection {
+#search-box input {
   border: 0;
   box-shadow: none;
+  background: transparent;
 }
-#search-box .ant-input {
-  border: 0;
-  box-shadow: none;
+#search-box input::placeholder {
+  color: #a3b1bf;
 }
 .header-lang-button {
   color: rgba(0, 0, 0, 0.65);
@@ -6291,7 +6294,7 @@ footer .bottom-bar a:hover {
 }
 .markdown hr {
   border: 0;
-  background: #e9e9e9;
+  background: #ebedf0;
 }
 .markdown code {
   background: #f2f4f5;
@@ -6423,7 +6426,7 @@ footer .bottom-bar a:hover {
   color: #314659;
 }
 .resource-card-description {
-  color: #999;
+  color: #697b8c;
 }
 .preview-image-wrapper {
   background: #f7f7f7;
@@ -6706,4 +6709,17 @@ ul.anticons-list li:after {
   color: #fff;
   border-radius: 8px;
   background: url(https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg) center / 180px;
+}
+.algolia-autocomplete .ds-dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.algolia-autocomplete .ds-dropdown-menu [class^="ds-dataset-"] {
+  border: none;
+}
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+  color: #314659;
+}
+.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+  color: @primary-color;
 }
