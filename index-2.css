@@ -8266,6 +8266,10 @@ footer .bottom-bar .translate-button {
   padding-right: 8px;
 }
 .preview-image-boxes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   float: right;
   margin: 0 0 70px 64px;
   width: 496px;
@@ -8283,6 +8287,9 @@ footer .bottom-bar .translate-button {
 .preview-image-box {
   width: 100%;
   float: left;
+}
+.preview-image-box + .preview-image-box {
+  margin-left: 24px;
 }
 .preview-image-wrapper {
   background: #f7f7f7;
